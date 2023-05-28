@@ -1,0 +1,87 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,300&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family:poppins ;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+   justify-content: center;
+   position: absolute;
+    background-color: background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 75%);
+
+}
+.form-box{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,30%);
+    background-color: rgb(255, 255, 255);
+    padding: 50px 60px 70px;
+    width: 70%;
+    max-width: 450px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    justify-content: center;
+    
+}
+.form-box h1{
+    font-size:xx-large;
+    color: rgb(75, 55, 189);
+    padding-bottom: 40px;
+    font-weight: 1000;
+}
+
+.input-field{
+    text-align: left;
+    height: 66px;
+    transition: max-height 0.5s ease-out;
+    max-height: 100px; 
+    overflow: hidden;
+}
+.input-field.hidden {
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+  }
+  
+input{
+    width: 300px;
+    height: 40px;
+}
+form a{
+    text-decoration: none;
+}
+form p{
+    text-align: left;
+    margin-left: 20px;
+}
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    
+}
+.btn-field button{
+    width: 150px;
+    border-radius: 40px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border: 0;
+    
+}
+.btn-field button.disable{
+    background-color: rgba(128, 128, 128, 0.566);
+    color: #555;
+}
